@@ -1,29 +1,21 @@
-# node-app-web
-
-## Project setup
+```bash
+npm install --save @capacitor/core @capacitor/cli
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+```bash
+npx cap init
 ```
 
-### Compiles and minifies for production
-```
+this is needed to compile vue and create the dist folder
+```bash
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
+then edit the capacitor.config.json file and set webDir to "dist"
+
+```bash
+npx cap add android
 ```
 
-### Lints and fixes files
+```bash
+npx cap open android
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
